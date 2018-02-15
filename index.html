@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="site-layout">
+    <div id="siteModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form method="post" action="#" id="user-add-form">
+
+                <div>
+                    <label for="first-name">First Name *</label>
+                    <input type="text" name="firstName" id="first-name" required>
+                    <span class="error-msg">Only letters</span>
+                </div>
+
+                <div>
+                    <label for="last-name">Last Name *</label>
+                    <input type="text" name="lastName" id="last-name" required>
+                    <span class="error-msg">Only letters</span>
+                </div>
+
+                <div>
+                    <label for="email">Email *</label>
+                    <input type="email" name="email" id="email" required>
+                    <span class="error-msg">Please enter valid email</span>
+                </div>
+
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone" maxlength="8">
+                </div>
+
+                <div>
+                    <label for="birthday">Birthday</label>
+                    <input type="date" name="birthday" id="birthday">
+                </div>
+
+                <button class="btn" id="add-user-btn" type="button">Add</button>
+                <button class="btn" id="save-user-btn" type="button">Save</button>
+                <button  class="btn btn-remove" type="reset">Reset</button>
+
+            </form>
+        </div>
+    </div>
+    <div>
+        <button class="btn" id="get-winner">Get winner</button>
+        <button class="btn" id="add-user">Add user</button>
+    </div>
+
+    <ul id="lottery-list"></ul>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
